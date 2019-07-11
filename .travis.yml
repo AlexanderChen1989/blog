@@ -1,0 +1,31 @@
+sudo: true
+dist: trusty
+language: generic
+
+git:
+  depth: 1
+
+addons:
+  apt:
+    packages:
+    - snapd
+
+install:
+  - sudo snap install hugo
+  - export PATH=/snap/bin:$PATH
+
+script:
+  - hugo --enableGitInfo
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  # token is set in travis-ci.org dashboard
+  github_token: $GITHUB_API_KEY
+  on:
+    branch: master
+  local_dir: public
+  repo: AlexanderChen1989/AlexanderChen1989.github.io
+  target_branch: master
+  email: deploy@travis-ci.org
+  name: deployment-bot

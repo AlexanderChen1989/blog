@@ -1,0 +1,12 @@
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
+[submodule "alexanderchen1989.github.io"]
+	path = alexanderchen1989.github.io
+	url = https://github.com/AlexanderChen1989/alexanderchen1989.github.io.git
+[submodule "public"]
+	path = public
+	url = https://github.com/AlexanderChen1989/alexanderchen1989.github.io.git
+[submodule "theme/ananke"]
+	path = theme/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
