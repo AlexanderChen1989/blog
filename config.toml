@@ -2,3 +2,4 @@ baseURL = "https://alexanderchen1989.github.io/"
 languageCode = "zh-cn"
 title = "明华语录"
 theme = "ananke"
+pygmentsCodeFences = true
